@@ -1,5 +1,14 @@
 ---
 title: "testing-quarto"
+listing:
+    contents: posts
+    type: default
+    categories: true
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
 
 This is a Quarto website.

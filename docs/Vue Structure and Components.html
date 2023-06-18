@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>testing-quarto</title>
+<title>testing-quarto – vue-structure-and-components</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,38 +59,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -115,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -130,131 +97,197 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">testing-quarto</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-vue-components" id="toc-introduction-to-vue-components" class="nav-link active" data-scroll-target="#introduction-to-vue-components">Introduction to Vue Components</a>
+  <ul class="collapse">
+  <li><a href="#explanation-of-vue-components" id="toc-explanation-of-vue-components" class="nav-link" data-scroll-target="#explanation-of-vue-components">Explanation of Vue Components</a></li>
+  <li><a href="#example-vue-file" id="toc-example-vue-file" class="nav-link" data-scroll-target="#example-vue-file">Example Vue File</a></li>
+  <li><a href="#create-a-new-component" id="toc-create-a-new-component" class="nav-link" data-scroll-target="#create-a-new-component">Create a new component</a></li>
+  <li><a href="#tree-structure-of-components" id="toc-tree-structure-of-components" class="nav-link" data-scroll-target="#tree-structure-of-components">Tree Structure of Components</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
+<section id="introduction-to-vue-components" class="level1">
+<h1>Introduction to Vue Components</h1>
+<p>In this document, we will explore the fundamentals of Vue components, understanding their role in creating reusable UI elements. We’ll dive into the anatomy of a Vue file using a practical example, learn how to create new components, and explore their hierarchical tree structure, which promotes modularity and reusability in Vue applications.</p>
+<section id="explanation-of-vue-components" class="level2">
+<h2 class="anchored" data-anchor-id="explanation-of-vue-components">Explanation of Vue Components</h2>
+<p>Components in Vue.js are the building blocks of a Vue application’s user interface (UI). They encapsulate reusable and self-contained sections of UI logic and markup. Each component represents a distinct part of the application, such as a navigation bar, sidebar, or user profile.</p>
+<p>To create a component in Vue, you define a template that contains the HTML markup, CSS styles, and JavaScript logic specific to that component. This encapsulation allows you to manage the UI functionality and appearance in a modular and organized manner.</p>
+<p>By combining HTML, JavaScript, and CSS in a single file, Vue Single-File Components offer a cohesive and self-contained approach for defining components. This structure promotes better organization, readability, and maintainability of the code, making it easier to manage and develop complex Vue applications.</p>
+<p>Components promote code reusability and maintainability. By breaking down the UI into smaller components, you can manage their behavior and appearance independently. This modular approach makes it easier to build complex interfaces and encourages a separation of concerns, as each component focuses on a specific functionality or visual element.</p>
+<p>By leveraging the power of components, you can build modular and scalable UIs in Vue.js, where each component represents a specific UI element or functionality. This approach enhances code organization, reusability, and maintainability, enabling you to create robust and visually appealing applications.</p>
+</section>
+<section id="example-vue-file" class="level2">
+<h2 class="anchored" data-anchor-id="example-vue-file">Example Vue File</h2>
+<p>Here’s an example of a Vue Single-File Component (SFC) that demonstrates how HTML, JavaScript, and CSS can coexist in the same file:</p>
+<pre class="vue"><code>&lt;!-- The HTML section. This is also where other Vue components are defined--&gt;
+&lt;template&gt;
+  &lt;div class="component"&gt;
+    &lt;h1&gt;{{ message }}&lt;/h1&gt;
+    &lt;button @click="incrementCount"&gt;Click me&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+&lt;!-- The JavaScript section. All your logic and required Vue imports go here--&gt;
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      message: 'Hello, Vue!',
+      count: 0
+    };
+  },
+  methods: {
+    incrementCount() {
+      this.count++;
+    }
+  }
+};
+&lt;/script&gt;
+
+&lt;!-- The CSS section. You can refer to any components that you defined in your html.--&gt;
+&lt;style&gt;
+.component {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+  color: #333;
+}
+&lt;/style&gt;</code></pre>
+<p>In this example, the file has a <code>.vue</code> extension and contains three sections:</p>
+<ol type="1">
+<li><strong>Template</strong>: The <code>&lt;template&gt;</code> section contains the HTML markup for the component. It defines a <code>&lt;div&gt;</code> element with a class of <code>"component"</code>, an <code>&lt;h1&gt;</code> element that displays the <code>message</code> data property, and a <code>&lt;button&gt;</code> element with a click event listener that calls the <code>incrementCount</code> method.</li>
+<li><strong>Script</strong>: The <code>&lt;script&gt;</code> section contains the JavaScript code for the component. It defines an object using <code>export default</code> syntax, which represents the Vue component. The <code>data</code> function initializes the <code>message</code> and <code>count</code> data properties. The <code>methods</code> object defines the <code>incrementCount</code> method, which increments the <code>count</code> property.</li>
+<li><strong>Style</strong>: The <code>&lt;style&gt;</code> section contains the CSS styles specific to the component. It applies styles to the <code>.component</code> class and the <code>&lt;h1&gt;</code> element within it.</li>
+</ol>
+</section>
+<section id="create-a-new-component" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-component">Create a new component</h2>
+<p>Here’s a quick guide on how to create a new component within the main <code>App.vue</code> file in a Vue.js application:</p>
+<ol type="1">
+<li><p>Open your Vue.js project and locate the <code>App.vue</code> file. This file serves as the entry point for your application and is typically found in the <code>src</code> or <code>components</code> directory.</p></li>
+<li><p>Within the <code>&lt;template&gt;</code> section of <code>App.vue</code>, identify the area where you want to add the new component. For example, you might want to insert it below an existing element or create a new section.</p></li>
+<li><p>Define the new component by using the <code>&lt;script&gt;</code> tag inside the <code>App.vue</code> file. Here’s an example of creating a component named <code>MyComponent</code>:</p>
+<pre class="vue"><code>&lt;script&gt;
+export default {
+  name: 'MyComponent',
+  data() {
+    return {
+      message: 'Hello from MyComponent!'
+    };
+  }
+}
+&lt;/script&gt;</code></pre></li>
+<li><p>In the <code>&lt;template&gt;</code> section, use the newly created component by adding its tag within the desired location. Here’s an example of using the <code>MyComponent</code> component:</p>
+<pre class="vue"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;!-- Existing code in App.vue --&gt;
+    &lt;h1&gt;Welcome to my Vue.js app!&lt;/h1&gt;
+    &lt;!-- New component usage --&gt;
+    &lt;MyComponent /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre></li>
+<li><p>Save the changes to the <code>App.vue</code> file.</p></li>
+</ol>
+<p>By following these steps, you have successfully created a new component within the main <code>App.vue</code> file. The component is defined using the <code>&lt;script&gt;</code> tag, and you can use it in the <code>&lt;template&gt;</code> section by adding its tag wherever you want it to appear. This approach allows you to create and integrate components within the main app file, making it easier to manage and structure your Vue.js application.</p>
+</section>
+<section id="tree-structure-of-components" class="level2">
+<h2 class="anchored" data-anchor-id="tree-structure-of-components">Tree Structure of Components</h2>
+<p>In Vue.js, components form a hierarchical tree structure, where parent components encapsulate and contain child components. This tree structure is based on the parent-child relationship between components and reflects the organization and composition of the user interface (UI). At the root of the tree is typically the main Vue instance, which represents the entire application. The main Vue instance serves as the root component and can contain multiple child components.</p>
+<p>As the application grows, components are nested within each other, forming a tree-like structure. Each component can have its own template, data, methods, and lifecycle hooks. Child components can receive data from parent components via props and emit events to communicate changes back to the parent components. Here’s an example to illustrate the component tree structure:</p>
+<pre class="vue"><code>&lt;!-- App.vue with nested child componenets --&gt;
+&lt;template&gt;
+  &lt;div id="app"&gt;
+    &lt;Header/&gt;
+    &lt;div id="main:"&gt;
+      &lt;Sidebar/&gt;
+      &lt;Content/&gt;
+    &lt;/div&gt;
+    &lt;Footer/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Header from './components/Sidebar.vue';
+import Sidebar from './components/Sidebar.vue';
+import Content from './components/Content.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Sidebar,
+    Content
+  },
+  data() {
+    return {
+      title: 'My Vue App'
+    };
+  }
+};
+&lt;/script&gt;</code></pre>
+<p>In this example, the <code>App</code> component serves as the root component. It contains the <code>header</code>, <code>main</code>, and <code>footer</code> sections, which are child components. The <code>App</code> component also imports and registers the <code>Sidebar</code> and <code>Content</code> components as its child components using the <code>components</code> property.</p>
+<p>The <code>Sidebar</code> and <code>Content</code> components are further nested within the <code>main</code> section of the <code>App</code> component. They can have their own template, data, and methods, allowing for encapsulation and reusability.</p>
+<p>This hierarchical structure allows for composition and separation of concerns in Vue.js applications. It enables you to break down complex UIs into smaller, manageable components, each responsible for its specific functionality. The component tree structure facilitates communication and data flow between components, making it easier to develop and maintain Vue.js applications.</p>
+<p>Certainly! Here’s a tree view representation of the component structure in the example:</p>
+<pre class="mermaid"><code>graph TB
+  A[App]
+  B[Header]
+  D[main]
+  E[Sidebar]
+  F[Content]
+  G[Footer]
+
+  A --&gt; B
+  A --&gt; D
+  D --&gt; E
+  D --&gt; F
+  A --&gt; G
 
 
+</code></pre>
+<p>In this tree view, each component is represented by its component name or HTML element. The indentation represents the nesting hierarchy, with the child components indented beneath their parent components. Here’s a breakdown of the component tree structure based on the example:</p>
+<ul>
+<li><code>App</code> is the root component.
+<ul>
+<li><code>header</code> is a child component of <code>App</code>.
+<ul>
+<li><code>h1</code> is a child component of <code>header</code>.</li>
+</ul></li>
+<li><code>main</code> is a div that contains child components.
+<ul>
+<li><code>Sidebar</code> is a child component of <code>main</code>.</li>
+<li><code>Content</code> is a child component of <code>main</code>.</li>
+</ul></li>
+<li><code>footer</code> is a child component of <code>App</code>.
+<ul>
+<li><code>p</code> is a child component of <code>footer</code>.</li>
+</ul></li>
+</ul></li>
+</ul>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1686991293543" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/Create a new Vue Project.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Create a new Vue Project.html">
-<h3 class="no-anchor listing-title">
-Create a new Vue Project
-</h3>
-<div class="listing-subtitle">
+</section>
+</section>
 
-</div>
-<div class="listing-description">
-Creating a new Vue project is a straightforward process that offers flexibility in terms of command-line or browser-based approaches. Whether you prefer using…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Create a new Vue Project.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1687082386618" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/Installing Vue using Scoop.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Installing Vue using Scoop.html">
-<h3 class="no-anchor listing-title">
-Installing Vue using Scoop
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Vue.js is a popular JavaScript framework for building user interfaces. By leveraging Scoop, a command-line package manager for Windows, you can quickly and easily install…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Installing Vue using Scoop.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1686990709806" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/Testing JavaScript Code in IntelliJ.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Testing JavaScript Code in IntelliJ.html">
-<h3 class="no-anchor listing-title">
-Testing JavaScript Code in IntelliJ
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-IntelliJ IDEA provides a powerful and feature-rich development environment for JavaScript programming. In this quick guide, we’ll walk you through the simple steps to create…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Testing JavaScript Code in IntelliJ.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1687082567962" data-listing-reading-time-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/Vue Structure and Components.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Vue Structure and Components.html">
-<h3 class="no-anchor listing-title">
-Introduction to Vue Components
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-In this document, we will explore the fundamentals of Vue components, understanding their role in creating reusable UI elements. We’ll dive into the anatomy of a Vue…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Vue Structure and Components.html"> </a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
