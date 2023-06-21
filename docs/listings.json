@@ -3,7 +3,11 @@
     "listing": "/index.html",
     "items": [
       "/posts/Create a new Vue Project.html",
+      "/posts/Flexbox vs Grid.html",
+      "/posts/How to use Vuejs logger.html",
       "/posts/Installing Vue using Scoop.html",
+      "/posts/Shuffling collections in JavaScript.html",
+      "/posts/Testing CSS Code in IntelliJ.html",
       "/posts/Testing JavaScript Code in IntelliJ.html",
       "/posts/Vue Structure and Components.html"
     ]
