@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>testing-quarto – shuffling-collections-in-javascript</title>
+<title>testing-quarto – using-fat-arrow-functions-in-javascript</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,11 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#create-a-collection-shuffling-function-in-javascript" id="toc-create-a-collection-shuffling-function-in-javascript" class="nav-link active" data-scroll-target="#create-a-collection-shuffling-function-in-javascript">Create a Collection Shuffling Function in JavaScript</a>
-  <ul class="collapse">
-  <li><a href="#javascript-implementation" id="toc-javascript-implementation" class="nav-link" data-scroll-target="#javascript-implementation">JavaScript Implementation</a></li>
-  <li><a href="#typescript-implementation" id="toc-typescript-implementation" class="nav-link" data-scroll-target="#typescript-implementation">TypeScript Implementation</a></li>
-  </ul></li>
+  <li><a href="#using-fat-arrow-functions-in-javascript" id="toc-using-fat-arrow-functions-in-javascript" class="nav-link active" data-scroll-target="#using-fat-arrow-functions-in-javascript">Using Fat Arrow Functions in JavaScript</a></li>
   </ul>
 </nav>
     </div>
@@ -152,57 +148,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="create-a-collection-shuffling-function-in-javascript" class="level1">
-<h1>Create a Collection Shuffling Function in JavaScript</h1>
-<p><em>Utilize a custom function that can shuffle any given collection in JavaScript.</em></p>
-<p>JavaScript does not inherently have a built-in function to shuffle a collection, but you can easily create one using the Fisher-Yates (or Knuth) shuffle algorithm. This algorithm works by selecting an element from the collection and swapping it with the current element, iterating through the collection in this manner until every element has been shuffled.</p>
-<section id="javascript-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="javascript-implementation">JavaScript Implementation</h2>
-<p>Here’s a simple implementation of the Fisher-Yates shuffle for an array in JavaScript:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">shuffleArray</span>(array) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> currentIndex <span class="op">=</span> array<span class="op">.</span><span class="at">length</span><span class="op">,</span> temporaryValue<span class="op">,</span> randomIndex<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// While there remain elements to shuffle...</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="dv">0</span> <span class="op">!==</span> currentIndex) {</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Pick a remaining element...</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        randomIndex <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">*</span> currentIndex)<span class="op">;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        currentIndex <span class="op">-=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="co">// And swap it with the current element.</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        temporaryValue <span class="op">=</span> array[currentIndex]<span class="op">;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        array[currentIndex] <span class="op">=</span> array[randomIndex]<span class="op">;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        array[randomIndex] <span class="op">=</span> temporaryValue<span class="op">;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> array<span class="op">;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This <code>shuffleArray</code> function will return a new array with the same elements as the original, but in a random order. It uses JavaScript’s built-in <code>Math.random()</code> function to generate the randomness needed for the shuffle. You can test this code by running the following code:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Testing shuffleArray function</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> arr <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> <span class="fu">shuffleArray</span>(arr)<span class="op">;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(arr)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="typescript-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="typescript-implementation">TypeScript Implementation</h2>
-<p>In TypeScript, you’d maintain the same logic but explicitly define the type of data in your array:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode typescript code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">shuffleArray</span>(array<span class="op">:</span> <span class="dt">number</span>[])<span class="op">:</span> <span class="dt">number</span>[] {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> currentIndex <span class="op">=</span> array<span class="op">.</span><span class="at">length</span><span class="op">;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> temporaryValue<span class="op">:</span> <span class="dt">number</span><span class="op">;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> randomIndex<span class="op">:</span> <span class="dt">number</span><span class="op">;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="dv">0</span> <span class="op">!==</span> currentIndex) {</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        randomIndex <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">*</span> currentIndex)<span class="op">;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        currentIndex <span class="op">-=</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        temporaryValue <span class="op">=</span> array[currentIndex]<span class="op">;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        array[currentIndex] <span class="op">=</span> array[randomIndex]<span class="op">;</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        array[randomIndex] <span class="op">=</span> temporaryValue<span class="op">;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> array<span class="op">;</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="using-fat-arrow-functions-in-javascript" class="level1">
+<h1>Using Fat Arrow Functions in JavaScript</h1>
+<p><em>As part of ES6, JavaScript introduced ‘fat arrow’ functions, a new way to declare and use functions with a more concise syntax. Not only do they make your code cleaner, but they also change the way <code>this</code> behaves. Let’s delve into the world of fat arrow functions with a simple example.</em></p>
+<p><strong>Understanding Fat Arrow Functions:</strong></p>
+<p>A fat arrow function is a more concise syntax for writing function expressions. They utilize the “fat arrow” (=&gt;) operator to define the function.</p>
+<p>Here’s the basic syntax for a fat arrow function:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> functionName <span class="op">=</span> (parameters) <span class="kw">=&gt;</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">// function body</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The parentheses <code>()</code> hold the input parameters, and the function’s body is contained within the <code>{}</code> braces. The <code>=&gt;</code> is the “fat arrow” that gives these functions their name.</p>
+<p><strong>A Simple Example:</strong></p>
+<p>Let’s say we have a simple function that adds two numbers. Here’s how we could write it using fat arrow syntax:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> addNumbers <span class="op">=</span> (num1<span class="op">,</span> num2) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num1 <span class="op">+</span> num2<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">addNumbers</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">3</span>))<span class="op">;</span>  <span class="co">// Outputs: 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this example, <code>addNumbers</code> is a fat arrow function that takes two parameters, <code>num1</code> and <code>num2</code>, and returns their sum.</p>
+<p><strong>Simplified Syntax for Single Parameter and Single Statement:</strong></p>
+<p>If your function has only one parameter, you can leave out the parentheses:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> square <span class="op">=</span> num <span class="kw">=&gt;</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num <span class="op">*</span> num<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">square</span>(<span class="dv">5</span>))<span class="op">;</span>  <span class="co">// Outputs: 25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Also, if the function body consists of a single statement that returns a value, you can omit the <code>return</code> keyword and the <code>{}</code> braces:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> square <span class="op">=</span> num <span class="kw">=&gt;</span> num <span class="op">*</span> num<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">square</span>(<span class="dv">5</span>))<span class="op">;</span>  <span class="co">// Outputs: 25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Understanding the ‘this’ Keyword:</strong></p>
+<p>Fat arrow functions don’t bind their own <code>this</code> value. Instead, <code>this</code> is set to the surrounding (lexical) context. Traditional function expressions bind their own <code>this</code> value, which can cause unexpected behavior in certain contexts. This property makes fat arrow functions particularly useful when working with event handlers and methods that require <code>this</code> to refer to object properties.</p>
+<p>Remember, ES6’s fat arrow functions provide a shorter, more concise syntax to write function expressions. Happy coding!</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
