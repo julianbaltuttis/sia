@@ -1,4 +1,8 @@
-# CSS Layouts: Flexbox vs Grid
+---
+title: "CSS Layouts: Flexbox vs Grid"
+categories:
+   - "CSS"
+---
 
 *Modern CSS offers powerful layout modules to create complex responsive designs. Among these, Flexbox and Grid stand
 out, each having their own strengths. This guide will help you understand the primary differences between the two,

@@ -1,4 +1,14 @@
-# Logging in Vue projects using Vuejs logger
+---
+title: "Logging in Vue projects using Vuejs logger"
+categories:
+  - "Vue"
+  - "Logging"
+format:
+  html:
+    toc-title: Hi there
+    number-sections: true
+    image: "../assets/pink.jpg"     
+---
 
 *Use logging features for improved coding and debugging in a Vue Project.*
 
