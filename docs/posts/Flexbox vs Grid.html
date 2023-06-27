@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>testing-quarto – flexbox-vs-grid</title>
+<title>testing-quarto - CSS Layouts: Flexbox vs Grid</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,16 +80,20 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
-  </li>  
-</ul>
+              <ul class="navbar-nav navbar-nav-scroll me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../index.html" rel="" target="">
+                          <span class="menu-text">Home</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../mathematics.html" rel="" target="">
+                          <span class="menu-text">Math</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../about.html" rel="" target="">
+                          <span class="menu-text">About</span></a>
+                  </li>
+              </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
           </div> <!-- /navcollapse -->
@@ -101,37 +105,57 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#css-layouts-flexbox-vs-grid" id="toc-css-layouts-flexbox-vs-grid" class="nav-link active" data-scroll-target="#css-layouts-flexbox-vs-grid">CSS Layouts: Flexbox vs Grid</a></li>
-  </ul>
-</nav>
+
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+    <header id="title-block-header" class="quarto-title-block default">
+        <div class="quarto-title">
+            <h1 class="title">CSS Layouts: Flexbox vs Grid</h1>
+            <div class="quarto-categories">
+                <div class="quarto-category">CSS</div>
+            </div>
+        </div>
 
 
-<section id="css-layouts-flexbox-vs-grid" class="level1">
-<h1>CSS Layouts: Flexbox vs Grid</h1>
-<p><em>Modern CSS offers powerful layout modules to create complex responsive designs. Among these, Flexbox and Grid stand out, each having their own strengths. This guide will help you understand the primary differences between the two, aiding you in making more informed design choices.</em></p>
-<p><strong>Flexbox:</strong></p>
-<p>Flexbox, or Flexible Box Module, is a one-dimensional layout model designed for laying out items in a row or a column. It provides efficient ways to align, distribute space, and manipulate items in a container, even when their size is unknown or dynamic. Check out this guide for detailed information: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">A&nbsp;Complete&nbsp;Guide&nbsp;to&nbsp;Flexbox.</a></p>
-<p><strong>Grid:</strong></p>
-<p>CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows simultaneously, unlike Flexbox which is largely a one-dimensional system. It’s well suited for layout designs that require complex alignments and placements on both the x and y-axis. Check out this guide for detailed information: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A&nbsp;Complete&nbsp;Guide&nbsp;to&nbsp;Grid.</a></p>
-<p><strong>Key Differences:</strong></p>
-<ol type="1">
-<li><p><strong>Dimensions:</strong> The key difference between Flexbox and Grid is their dimensions. Flexbox is one-dimensional, making it ideal for laying out items linearly in a row or a column. Grid is two-dimensional, making it a better fit for layouts that require alignment on both axes.</p></li>
-<li><p><strong>Content vs Layout:</strong> Flexbox is designed with an emphasis on content. It’s great when the size of your content dictates how it should be laid out on the page (like a set of buttons). Grid, on the other hand, starts with the layout first, which is useful for design-driven content placement.</p></li>
+        <div class="quarto-title-meta">
+
+
+        </div>
+
+
+    </header>
+
+    <p><em>Modern CSS offers powerful layout modules to create complex responsive designs. Among these, Flexbox and Grid
+        stand out, each having their own strengths. This guide will help you understand the primary differences between
+        the two, aiding you in making more informed design choices.</em></p>
+    <p><strong>Flexbox:</strong></p>
+    <p>Flexbox, or Flexible Box Module, is a one-dimensional layout model designed for laying out items in a row or a
+        column. It provides efficient ways to align, distribute space, and manipulate items in a container, even when
+        their size is unknown or dynamic. Check out this guide for detailed information: <a
+                href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">A&nbsp;Complete&nbsp;Guide&nbsp;to&nbsp;Flexbox.</a>
+    </p>
+    <p><strong>Grid:</strong></p>
+    <p>CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows simultaneously, unlike
+        Flexbox which is largely a one-dimensional system. It’s well suited for layout designs that require complex
+        alignments and placements on both the x and y-axis. Check out this guide for detailed information: <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/">A&nbsp;Complete&nbsp;Guide&nbsp;to&nbsp;Grid.</a>
+    </p>
+    <p><strong>Key Differences:</strong></p>
+    <ol type="1">
+        <li><p><strong>Dimensions:</strong> The key difference between Flexbox and Grid is their dimensions. Flexbox is
+            one-dimensional, making it ideal for laying out items linearly in a row or a column. Grid is
+            two-dimensional, making it a better fit for layouts that require alignment on both axes.</p></li>
+        <li><p><strong>Content vs Layout:</strong> Flexbox is designed with an emphasis on content. It’s great when the
+            size of your content dictates how it should be laid out on the page (like a set of buttons). Grid, on the
+            other hand, starts with the layout first, which is useful for design-driven content placement.</p></li>
 <li><p><strong>Complexity:</strong> Flexbox is generally simpler to grasp and can solve many layout problems with less CSS. Grid, however, provides a more powerful, albeit complex, system for creating intricate layouts.</p></li>
 <li><p><strong>Browser Support:</strong> As of writing, both Flexbox and Grid have good support across all modern browsers. However, Flexbox has slightly better support in older versions of browsers.</p></li>
 </ol>
 <p>It’s important to note that Flexbox and Grid aren’t mutually exclusive. They are designed to handle different types of layout problems, and in a well-structured CSS design, they should often be used together.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -361,7 +385,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           }
           popup.appendChild(citeDiv);
         });
-        return popup.innerHTML;
+          return popup.innerHTML;
       });
     }
   }
@@ -370,5 +394,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 
 
-
-</body></html>
+<footer class="footer">
+    <div class="nav-footer">
+        <div class="nav-footer-center">
+            <div class="toc-actions">
+                <div><i class="bi bi-github"></i></div>
+                <div class="action-links"><p><a
+                        href="https://github.com/julianbaltuttis/testing-quarto/edit/master/posts/Flexbox vs Grid.md"
+                        class="toc-action">Edit this page</a></p>
+                    <p><a href="https://github.com/julianbaltuttis/testing-quarto/issues/new" class="toc-action">Report
+                        an issue</a></p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

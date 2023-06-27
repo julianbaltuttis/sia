@@ -2,16 +2,23 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Changing Themes in Quarto.html",
       "/posts/Create a new Vue Project.html",
       "/posts/Flexbox vs Grid.html",
       "/posts/How to use Vuejs logger.html",
       "/posts/Installing Vue using Scoop.html",
+      "/posts/Quarto Essential Terminal Commands.html",
       "/posts/Shuffling collections in JavaScript.html",
       "/posts/Testing CSS Code in IntelliJ.html",
       "/posts/Testing JavaScript Code in IntelliJ.html",
-      "/posts/Understanding Basic Matrix Notation.html",
       "/posts/Using Fat Arrow Functions in JavaScript.html",
       "/posts/Vue Structure and Components.html"
+    ]
+  },
+  {
+    "listing": "/mathematics.html",
+    "items": [
+      "/posts/math/Understanding Basic Matrix Notation.html"
     ]
   }
 ]
