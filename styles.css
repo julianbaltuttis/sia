@@ -1,0 +1,10 @@
+/* css styles */
+
+
+.quarto-grid-item .listing-item-img-placeholder {
+    background-color: deeppink;
+}
+
+.description {
+    font-style: italic;
+}
