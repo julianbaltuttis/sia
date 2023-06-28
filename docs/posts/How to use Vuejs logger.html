@@ -128,8 +128,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                           <span class="menu-text">About</span></a>
                   </li>
               </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
+              <div class="quarto-navbar-tools ms-auto">
+              </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -215,16 +215,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         class="op">=</span> {</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    isEnabled<span class="op">:</span> <span
         class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    logLevel<span class="op">:</span> isProduction <span class="op">?</span> <span class="st">'error'</span> <span class="op">:</span> <span class="st">'debug'</span><span class="op">,</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    stringifyArguments<span class="op">:</span> <span class="kw">false</span><span class="op">,</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    showLogLevel<span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    showMethodName<span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    separator<span class="op">:</span> <span class="st">'|'</span><span class="op">,</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    showConsoleColors<span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    logLevel<span class="op">:</span> isProduction <span
+        class="op">?</span> <span class="st">'error'</span> <span class="op">:</span> <span
+        class="st">'debug'</span><span class="op">,</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    stringifyArguments<span class="op">:</span> <span
+        class="kw">false</span><span class="op">,</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    showLogLevel<span class="op">:</span> <span
+        class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    showMethodName<span
+        class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    separator<span class="op">:</span> <span
+        class="st">'|'</span><span class="op">,</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    showConsoleColors<span class="op">:</span> <span
+        class="kw">true</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">// @ts-ignore</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>Vue<span class="op">.</span><span class="fu">use</span>(VueLogger<span class="op">,</span> options)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>Vue<span class="op">.</span><span class="fu">use</span>(VueLogger<span
+        class="op">,</span> options)<span class="op">;</span></span></code><button title="Copy to Clipboard"
+                                                                                   class="code-copy-button"><i
+                class="bi"></i></button></pre></div>
 <p>Now, you can log anywhere like so:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode typescript code-with-copy"><code class="sourceCode typescript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">this</span><span class="op">.</span><span class="at">$log</span><span class="op">.</span><span class="fu">debug</span>(<span class="st">'test'</span><span class="op">,</span> <span class="kw">this</span><span class="op">.</span><span class="at">a</span><span class="op">,</span> <span class="dv">123</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">this</span><span class="op">.</span><span class="at">$log</span><span class="op">.</span><span class="fu">info</span>(<span class="st">'test'</span><span class="op">,</span> <span class="kw">this</span><span class="op">.</span><span class="at">b</span>)</span>
@@ -267,9 +277,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"> * The vuejs-logger package only defines $log for the vue instance, not for the constructor.</span></span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"> * As a result, there is no way to call the logger on the Vue global. This fixes that.</span></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"> */</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">declare</span> <span class="im">module</span> <span class="st">'vue/types/vue'</span> {</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">interface</span> Vue {</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        $log<span class="op">:</span> Log<span class="op">;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">declare</span> <span class="im">module</span> <span
+        class="st">'vue/types/vue'</span> {</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span
+        class="kw">interface</span> Vue {</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        $log<span class="op">:</span> Log<span
+        class="op">;</span></span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="im">export</span> <span class="kw">interface</span> VueConstructor<span class="op">&lt;</span>V <span class="kw">extends</span> Vue <span class="op">=</span> Vue<span class="op">&gt;</span> {</span>

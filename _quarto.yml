@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+execute:
+  freeze: auto
+
 website:
   repo-url: https://github.com/julianbaltuttis/testing-quarto/
   repo-actions: [ edit, issue ]
