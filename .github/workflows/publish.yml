@@ -1,9 +1,10 @@
-n:
-  workflow_dispatch:
-  push:
-    branches: main
-
 name: Quarto Publish
+
+on:
+  workflow_dispatch:
+    push:
+      branches:
+        - master
 
 jobs:
   build-deploy:
