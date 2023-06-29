@@ -2,70 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/julianbaltuttis/testing-quarto/mathematics.html</loc>
-    <lastmod>2023-06-29T10:17:34.879Z</lastmod>
+    <lastmod>2023-06-29T21:00:43.164Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/julianbaltuttis/testing-quarto/index.html</loc>
-    <lastmod>2023-06-29T10:17:34.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/test.html</loc>
-    <lastmod>2023-06-29T10:17:32.511Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Testing CSS Code in IntelliJ.html</loc>
-    <lastmod>2023-06-29T10:17:31.651Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Changing Themes in Quarto.html</loc>
-    <lastmod>2023-06-29T10:17:30.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Vue Structure and Components.html</loc>
-    <lastmod>2023-06-29T10:17:29.795Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Installing Vue using Scoop.html</loc>
-    <lastmod>2023-06-29T10:17:28.439Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Testing JavaScript Code in IntelliJ.html</loc>
-    <lastmod>2023-06-29T10:17:27.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Create a new Vue Project.html</loc>
-    <lastmod>2023-06-29T10:17:26.255Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Using Fat Arrow Functions in JavaScript.html</loc>
-    <lastmod>2023-06-29T10:17:27.171Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Quarto Essential Terminal Commands.html</loc>
-    <lastmod>2023-06-29T10:17:28.027Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/math/Understanding Basic Matrix Notation.html</loc>
-    <lastmod>2023-06-29T10:17:28.831Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Shuffling collections in JavaScript.html</loc>
-    <lastmod>2023-06-29T10:17:30.259Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Flexbox vs Grid.html</loc>
-    <lastmod>2023-06-29T10:17:31.227Z</lastmod>
+    <lastmod>2023-06-29T21:00:42.556Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/julianbaltuttis/testing-quarto/posts/How to use Vuejs logger.html</loc>
-    <lastmod>2023-06-29T10:17:32.163Z</lastmod>
+    <lastmod>2023-06-29T21:00:41.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Flexbox vs Grid.html</loc>
+    <lastmod>2023-06-29T21:00:40.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Shuffling collections in JavaScript.html</loc>
+    <lastmod>2023-06-29T21:00:39.864Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/math/Understanding Basic Matrix Notation.html</loc>
+    <lastmod>2023-06-29T21:00:38.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Quarto Essential Terminal Commands.html</loc>
+    <lastmod>2023-06-29T21:00:38.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Using Fat Arrow Functions in JavaScript.html</loc>
+    <lastmod>2023-06-29T21:00:37.528Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Create a new Vue Project.html</loc>
+    <lastmod>2023-06-29T21:00:36.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Testing JavaScript Code in IntelliJ.html</loc>
+    <lastmod>2023-06-29T21:00:37.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Installing Vue using Scoop.html</loc>
+    <lastmod>2023-06-29T21:00:38.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Vue Structure and Components.html</loc>
+    <lastmod>2023-06-29T21:00:39.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Changing Themes in Quarto.html</loc>
+    <lastmod>2023-06-29T21:00:40.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/julianbaltuttis/testing-quarto/posts/Testing CSS Code in IntelliJ.html</loc>
+    <lastmod>2023-06-29T21:00:40.880Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/julianbaltuttis/testing-quarto/posts/creating-deploy-keys-for-github.html</loc>
-    <lastmod>2023-06-29T10:17:32.963Z</lastmod>
+    <lastmod>2023-06-29T21:00:41.596Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/julianbaltuttis/testing-quarto/about.html</loc>
-    <lastmod>2023-06-29T10:17:34.419Z</lastmod>
+    <lastmod>2023-06-29T21:00:42.832Z</lastmod>
   </url>
 </urlset>

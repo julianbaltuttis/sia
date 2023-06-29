@@ -8,19 +8,18 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Changing Themes in Quarto.html",
       "/posts/Create a new Vue Project.html",
       "/posts/Flexbox vs Grid.html",
-      "/posts/How to use Vuejs logger.html",
-      "/posts/Installing Vue using Scoop.html",
       "/posts/Quarto Essential Terminal Commands.html",
       "/posts/Shuffling collections in JavaScript.html",
       "/posts/Testing CSS Code in IntelliJ.html",
       "/posts/Testing JavaScript Code in IntelliJ.html",
-      "/posts/Using Fat Arrow Functions in JavaScript.html",
       "/posts/Vue Structure and Components.html",
-      "/posts/test.html",
-      "/posts/creating-deploy-keys-for-github.html"
+      "/posts/creating-deploy-keys-for-github.html",
+      "/posts/Changing Themes in Quarto.html",
+      "/posts/How to use Vuejs logger.html",
+      "/posts/Using Fat Arrow Functions in JavaScript.html",
+      "/posts/Installing Vue using Scoop.html"
     ]
   }
 ]
