@@ -1,0 +1,41 @@
+# "Safeguard Your Site: Creating a Deploy Key for GitHub Pages"
+
+GitHub Pages provides an easy and straightforward way to host your static website directly from your GitHub repository.
+Sometimes, you may need to create a "deploy key" for secure access between your repository and an external service. This
+tutorial guides you through creating a deploy key specifically for GitHub Pages.
+
+**Steps to Create a Deploy Key:**
+
+1. **Generate a new SSH key:** Open your terminal, and use the `ssh-keygen` command to create a new SSH key. Add a label
+   to the end of the command to help you identify this key later. For example:
+
+    ```bash
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+    ```
+
+   When prompted to "Enter a file in which to save the key," press Enter to accept the default location. When asked to
+   enter a passphrase, you can either set one or leave it blank, then press Enter.
+
+2. **Copy the SSH key to your clipboard:** To copy the contents of the SSH key to your clipboard, use the `cat` command,
+   replacing the path with the path to your newly generated key, like so:
+
+    ```bash
+    cat ~/.ssh/id_ed25519.pub | clip
+    ```
+
+   If the `clip` command is not available, you can simply open the file in a text editor and manually copy the contents.
+
+3. **Add the SSH key to your GitHub repository:** Navigate to your GitHub repository in a web browser. Click on "
+   Settings" at the top of the repository page, then click on "Deploy keys" in the left-hand sidebar. Click on "Add
+   deploy key", paste your SSH key into the "Key" field, give it a title, and click "Add key".
+
+Now, you have a deploy key specifically for GitHub Pages, enhancing the security of your repository.
+
+**Remember:** A deploy key is read-only by default, but you can give it write access when adding it to your repository
+if needed. Use this feature with caution, as it allows the service with the deploy key to write to your repository.
+
+That's it! You've created a deploy key for your GitHub Pages site, enhancing the security of your deployment process.
+This approach is particularly useful when you are using external services or continuous integration systems for your
+deployment. Remember to manage your keys responsibly to maintain the integrity and security of your project.
+
+Let me know if there's any other topic you'd like me to cover.
