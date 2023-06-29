@@ -1,4 +1,4 @@
-# "Safeguard Your Site: Creating a Deploy Key for GitHub Pages"
+# Safeguard Your Site: Creating a Deploy Key for GitHub Pages
 
 GitHub Pages provides an easy and straightforward way to host your static website directly from your GitHub repository.
 Sometimes, you may need to create a "deploy key" for secure access between your repository and an external service. This

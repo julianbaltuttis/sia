@@ -1,7 +1,9 @@
 ---
 title: "Learning About Stuff"
 listing:
-  contents: posts/*.md
+  contents:
+    - posts/*.md
+    - posts/*.qmd
   type: grid
   categories: true
   image-height: "3.5em"
