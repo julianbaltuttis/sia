@@ -1,10 +1,25 @@
-# Installing Vue using Scoop
+---
+title: "How to install Vue via Scoop"
+description: "Install Vue in seconds using a single command line"
+date: 23 Jun 23
+image: "../assets/dark.jpg"
+categories:
+   - "Powershell"
+   - "Scoop"
+   - "Vue"
 
-Vue.js is a popular JavaScript framework for building user interfaces. By leveraging Scoop, a command-line package manager for Windows, you can quickly and easily install Vue.js and its associated tools on your Windows machine. In this guide, Ie'll walk you through the simple steps to set up Vue.js using Scoop, enabling you to start developing Vue.js applications in no time.
+---
+
+
+Vue.js is a popular JavaScript framework for building user interfaces. By leveraging Scoop, a command-line package
+manager for Windows, you can quickly and easily install Vue.js and its associated tools on your Windows machine. In this
+guide, Ie'll walk you through the simple steps to set up Vue.js using Scoop, enabling you to start developing Vue.js
+applications in no time.
 
 Installing Vue.js using Scoop on Windows can be done in a few simple steps. Here's a quick step-by-step guide:
 
-1. Open a command prompt: Launch a command prompt or PowerShell window. You can do this by pressing Win + R, typing "cmd" or "powershell", and hitting Enter.
+1. Open a command prompt: Launch a command prompt or PowerShell window. You can do this by pressing Win + R, typing "
+   cmd" or "powershell", and hitting Enter.
 
 2. Install Scoop: Copy-paste the following code into your PowerShell window:
 

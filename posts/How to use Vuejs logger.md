@@ -1,5 +1,9 @@
 ---
-title: "Logging in Vue projects using Vuejs logger"
+title:          "Logging in Vue projects using Vuejs logger"
+description:    "Use logging features for improved coding and debugging in a Vue Project."
+author:         "ChatGPT"
+image:          "../assets/dark.jpg"
+date:           29 Jun 23
 categories:
   - "Vue"
   - "Logging"
@@ -9,8 +13,6 @@ format:
     number-sections: true
     image: "../assets/pink.jpg"     
 ---
-
-*Use logging features for improved coding and debugging in a Vue Project.*
 
 You can install `Vuejs-logger`in order to get nifty logging features for your JavaScript code. To install it, open a
 terminal inside your project and enter:

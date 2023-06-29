@@ -1,15 +1,17 @@
 ---
+title: "Change Themes in Quarto"
+description: "Switching Themes and Changing Layouts in Quarto"
+date: 29 Jun 23
+categories:
+  - "Quarto"
+image: "../assets/light-blue.jpg"
 format:
   html:
     css: css/quarto.css
 ---
 
-# Change Themes in Quarto
-
-*Quarto provides a selection of attractive themes that can alter the look and feel of your documents. Let's dive into
-how to switch themes in Quarto and take a look at the default themes available.*
-
-**Changing Themes in Quarto:**
+Quarto provides a selection of attractive themes that can alter the look and feel of your documents. Let's dive into
+how to switch themes in Quarto and take a look at the default themes available.
 
 Themes in Quarto are set in the YAML metadata at the beginning of your document. You can specify the theme using
 the `html:` field for HTML documents. Here's an example:

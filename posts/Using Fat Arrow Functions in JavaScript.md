@@ -1,6 +1,16 @@
-# Using Fat Arrow Functions in JavaScript
+---
+title:          "Using Fat Arrow Functions in JavaScript"
+description:    "Use fat arrow syntax for functions in JavaScript"
+image:          "../assets/grass.jpg"
+date:           29 Jun 23
+categories:
+  - "JavaScript"
+  - "Syntax"
+---
 
-*As part of ES6, JavaScript introduced 'fat arrow' functions, a new way to declare and use functions with a more concise syntax. Not only do they make your code cleaner, but they also change the way `this` behaves. Let's delve into the world of fat arrow functions with a simple example.*
+As part of ES6, JavaScript introduced 'fat arrow' functions, a new way to declare and use functions with a more concise
+syntax. Not only do they make your code cleaner, but they also change the way `this` behaves. Let's delve into the world
+of fat arrow functions with a simple example.
 
 **Understanding Fat Arrow Functions:**
 
