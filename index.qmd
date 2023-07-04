@@ -1,5 +1,5 @@
 ---
-title: "Learning About Stuff"
+title: "Don't Panic!"
 listing:
   contents:
     - "posts/*.md"
