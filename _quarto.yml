@@ -9,7 +9,7 @@ website:
   repo-url: https://github.com/julianbaltuttis/testing-quarto/
   repo-actions: [ edit, issue ]
   repo-branch: master
-  title: "testing-quarto"
+  title: "SiA"
   navbar:
     left:
       - href: index.qmd
