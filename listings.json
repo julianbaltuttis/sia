@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/mathematics.html",
-    "items": [
-      "/posts/math/Understanding Basic Matrix Notation.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/Create a new Vue Project.html",
@@ -15,11 +9,18 @@
       "/posts/Testing CSS Code in IntelliJ.html",
       "/posts/Testing JavaScript Code in IntelliJ.html",
       "/posts/Vue Structure and Components.html",
+      "/posts/Set Builder Notation.html",
       "/posts/creating-deploy-keys-for-github.html",
       "/posts/Changing Themes in Quarto.html",
       "/posts/How to use Vuejs logger.html",
       "/posts/Using Fat Arrow Functions in JavaScript.html",
       "/posts/Installing Vue using Scoop.html"
+    ]
+  },
+  {
+    "listing": "/mathematics.html",
+    "items": [
+      "/posts/math/Understanding Basic Matrix Notation.html"
     ]
   }
 ]
