@@ -1,0 +1,41 @@
+# Set Builder Notation: Building Blocks of Mathematics
+
+Set Builder Notation is an elegant way of describing a set by stating the properties that its members must satisfy. It’s
+a bit like a recipe that tells you how to create the set. The notation can make complex sets much easier to work with.
+Let’s demystify it together.
+
+**Concept § (Set Builder Notation)**: In mathematics, the set builder notation is a method of specifying a set by
+describing its properties. It follows the form {x : P(x)}, which is read as "the set of all x such that P(x) is true".
+
+Let's break down this abstract concept with some concrete examples:
+
+**Example §1 (Set Builder Notation)**: Let's consider a simple set. We want a set of all positive integers less than 10.
+In set builder notation, this can be written as:
+$$
+\{x \in \mathbb{Z}^+ : x < 10\}
+$$
+
+In English, this reads as "the set of all x in positive integers such that x is less than 10".
+
+**Example §2 (Set Builder Notation)**: Now, let's try a set that involves a condition. We want a set of all even numbers
+less than 20. In set builder notation, this can be written as:
+
+$$
+\{x \in \mathbb{Z} : x \text{ is even}, x < 20\}
+$$
+
+This reads as "the set of all x in integers such that x is even and x is less than 20".
+
+**Example §3 (Set Builder Notation)**: Let's consider a set that involves a mathematical operation. We want a set of all
+numbers that are square of integers from 1 to 5. In set builder notation, this can be written as:
+
+$$
+\{x \in \mathbb{R} : x = n^2, n \in \mathbb{Z}, 1 \leq n \leq 5\}
+$$
+
+This reads as "the set of all x in real numbers such that x is the square of some integer n, where n is between 1 and
+5".
+
+Remember, while the set builder notation might appear confusing at first, it's a powerful tool to describe complex sets
+in a compact and precise way. Practice makes perfect, so keep going with your own examples until you're comfortable with
+the notation. Happy learning!
