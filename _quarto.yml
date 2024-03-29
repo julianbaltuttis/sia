@@ -6,7 +6,7 @@ execute:
   freeze: auto
 
 website:
-  repo-url: https://github.com/julianbaltuttis/testing-quarto/
+  repo-url: https://github.com/julianbaltuttis/sia/
   repo-actions: [ edit, issue ]
   repo-branch: master
   title: "SiA"

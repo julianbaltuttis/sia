@@ -1,5 +1,5 @@
 ---
-title: "Don't Panic!"
+title: "A Knowledge Database For Whatever"
 listing:
   contents:
     - "posts/*.md"
