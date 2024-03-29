@@ -9,4 +9,4 @@ professional life touches on: Computer Science, Mathematics, and an occasional d
 A heads-up: I use OpenAI's language model, GPT-4, to help generate some of the content here. So, there’s that. Neither
 the chatbot nor I are infallible—we don’t always get things right. I make no claims about the accuracy or correctness of
 the content posted here. But hey, if you come across something egregiously wrong, feel free to drop me a line at
-julianbaltuttis@gmail.com.
+(julianbaltuttis@gmail.com)[mailto:julianbaltuttis@gmail.com].
